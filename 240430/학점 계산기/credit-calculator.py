@@ -8,5 +8,7 @@ if av_grade >= 4:
     print("Perfect")
 elif av_grade >= 3:
     print("Good")
-else:
+elif av_grade < 3 and av_grade >= 0:
     print(Poor)
+else:
+    pass
