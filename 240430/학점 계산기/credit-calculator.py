@@ -4,9 +4,9 @@ av_grade = sum(grade) / n
 
 print(round(av_grade, 1))
 
-if av_grade >= 4:
+if av_grade >= 4.0:
     print("Perfect")
-elif av_grade >= 3:
+elif av_grade >= 3.0:
     print("Good")
 else:
     print("Poor")
