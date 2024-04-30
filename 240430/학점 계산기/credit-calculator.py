@@ -1,8 +1,8 @@
 n = int(input())
-grade = list(map(float, input().split(" ")))
+grade = list(map(float, input().split()))
 av_grade = sum(grade) / n
 
-print(round(av_grade, 1))
+print(f"{av_grade:.1f}")
 
 if av_grade >= 4.0:
     print("Perfect")
