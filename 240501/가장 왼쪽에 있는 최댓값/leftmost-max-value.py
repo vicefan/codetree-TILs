@@ -4,7 +4,7 @@ print(arr.index(max(arr)) + 1, end=" ")
 arr = arr[:arr.index(max(arr))]
 
 while True:
-    if len(arr) <= 1:
+    if arr == []:
         break
     print(arr.index(max(arr)) + 1, end=" ")
     arr = arr[:arr.index(max(arr))]
