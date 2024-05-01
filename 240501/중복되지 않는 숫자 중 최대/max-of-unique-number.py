@@ -10,7 +10,7 @@ for elem in arr:
 
 if cnt == 0 and len(arr_tmp) == 0:
     print(-1)
-elif cnt > 0 and len(arr_tmp) == 0:
+elif cnt > 0 and len(arr_tmp) != 0:
     print(max(arr_tmp))
 else:
     print(-1)
