@@ -9,6 +9,6 @@ for elem in arr:
         arr_tmp.append(elem)
 
 if cnt == 0:
-    print(max(arr_tmp))
-else:
     print(-1)
+else:
+    print(max(arr_tmp))
