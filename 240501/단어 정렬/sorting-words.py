@@ -6,4 +6,4 @@ arr = sorted
     ]
 )
 
-print(*arr, end="\n")
+print(*arr, sep="\n")
