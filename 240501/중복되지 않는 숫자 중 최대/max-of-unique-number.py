@@ -8,7 +8,7 @@ for elem in arr:
     else:
         arr_tmp.append(elem)
 
-if cnt == 0:
+if cnt == 0 or len(arr_tmp) == 0:
     print(-1)
 else:
     print(max(arr_tmp))
