@@ -1,5 +1,4 @@
-arr = sorted
-(
+arr = sorted(
     [
         input()
         for _ in range(int(input()))
