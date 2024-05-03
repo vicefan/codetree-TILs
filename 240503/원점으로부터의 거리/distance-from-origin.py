@@ -10,7 +10,7 @@ for i in range(int(input())):
     a, b = tuple(map(int, input().split()))
     distances.append(Distance(a, b, i + 1))
 
-distances.sort(key = lambda a: a.x + a.y)
+distances.sort(key = lambda a: abs(a.x) + abs(a.y))
 
 for i in distances:
     print(i.n)
