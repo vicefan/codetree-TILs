@@ -6,9 +6,15 @@ yo = ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"]
 
 what_yo = yo.index(input()) + 1
 
-yoyo, tmp = 1, 1
+yoyo, tmp = 0, 1
 
-while m1 != m2 and d1 != d2 and what_yo != 1:    
+while True:
+    if m1 == m2 and d1 == d2 and what_yo == 1:
+        yoyo = 1
+    
+    if m1 == m2 and d1 == d2:
+        break
+    
     if d1 == num_of_days[m1] + 1:
         d1 = 1
         m1 += 1
