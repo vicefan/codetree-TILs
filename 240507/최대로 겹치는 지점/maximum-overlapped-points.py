@@ -3,7 +3,7 @@ lines = [
     list(map(int, input().split()))
     for _ in range(n)
 ]
-arr = [0 for _ in range(100)]
+arr = [0 for _ in range(200)]
 
 for elem in lines:
     for i in range(elem[0], elem[1]):
