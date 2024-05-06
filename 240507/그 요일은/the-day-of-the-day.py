@@ -14,7 +14,7 @@ while True:
         d1 = 1
         m1 += 1
 
-    if days % 7 == idx:
+    if days % 7 == idx or (days % 7 == 0 and idx == 7):
         cnt += 1
     
     d1 += 1
