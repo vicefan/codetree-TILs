@@ -2,7 +2,11 @@ m1, d1, m2, d2 = map(int, input().split())
 
 num_of_days = [0, 31, 29, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31]
 
-hmd = 1
+yo = ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"]
+
+what_yo = yo.index(input()) + 1
+
+yoyo, tmp = 0, 7
 
 while True:
     if m1 == m2 and d1 == d2:
@@ -12,7 +16,10 @@ while True:
         d1 = 1
         m1 += 1
 
+    if tmp % what_yo == 0:
+        yoyo += 1
+
     d1 += 1
-    hmd += 1
+    tmp += 1
     
-print(hmd // 7 + 1)
+print(yoyo)
