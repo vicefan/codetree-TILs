@@ -6,7 +6,7 @@ yo = ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"]
 
 what_yo = yo.index(input()) + 1
 
-yoyo, tmp = 0, 7
+yoyo, tmp = 0, 1
 
 while True:
     if m1 == m2 and d1 == d2:
