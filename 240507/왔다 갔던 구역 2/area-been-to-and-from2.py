@@ -1,28 +1,29 @@
 n = int(input())
-arr = []
-field =[0 for _ in range(300)]
-start = 150
+arr = [0 for _ in range(300)]
+dm = []
 
 for _ in range(n):
-    x, d = input().split()
-    arr.append([int(x), d])
+    a, b = input().split()
+    dm.append([int(a), b])
 
-for elem in arr:
-    if elem[1] == "R":
-        m = elem[0] + start
-        for i in range(start, m + 1):
-            field[i] += 1
-            start = m
+current = 150
+dest = 0
+
+for d in dm:
+    if d[1] == "R":
+        dest = current + d[0]
+        for i in range(current, dest):
+            arr[i] += 1
+            current = dest
     else:
-        m = start - elem[0]
-        for i in range(m, start - 1, -1):
-            field[i] += 1
-            start = m
+        dest = current - d[0]
+        for i in range(current, dest, -1):
+            arr[i] += 1
+            current = dest
 
-total = 0
-
-for elem in field:
+cnt = 0
+for elem in arr:
     if elem >= 2:
-        total += elem
+        cnt += 1
 
-print(total)
+print(cnt)
