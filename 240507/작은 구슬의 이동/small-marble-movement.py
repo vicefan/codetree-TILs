@@ -10,7 +10,7 @@ dr = {
 }
 
 def in_range(x, y):
-    return 1 <= x < n and 1 <= y < n
+    return 1 <= x <= n and 1 <= y <= n
 
 r, c, d = input().split()
 r, c = int(r), int(c)
