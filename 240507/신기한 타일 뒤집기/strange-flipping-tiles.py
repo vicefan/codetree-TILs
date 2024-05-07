@@ -12,13 +12,13 @@ dest = 0
 for d in dm:
     if d[1] == "R":
         dest = start + d[0] - 1
-        for i in range(start, dest):
+        for i in range(start, dest + 1):
             arr[i] = 1
             start = dest
     else:
         dest = start - d[0] + 1
-        for i in range(start, dest, -1):
+        for i in range(start, dest - 1, -1):
             arr[i] = -1
             start = dest
 
-print(arr.count(1), arr.count(-1))
+print(arr.count(-1), arr.count(1))
