@@ -10,6 +10,8 @@ for elem in input():
     else:
         if elem == "R":
             dir_num = (dir_num + 1) % 4
+        elif elem == "L":
+            dir_num = (dir_num - 1) % 4
         else:
             x, y = x + dxs[dir_num], y + dys[dir_num]
         cnt += 1
