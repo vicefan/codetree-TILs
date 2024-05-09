@@ -4,8 +4,8 @@ dxs, dys = ([0, 1, 0, -1],
 
 n, m = map(int, input().split())
 arr = [
-    [0 for _ in range(n)]
-    for _ in range(m)
+    [0 for _ in range(m)]
+    for _ in range(n)
     ]
 
 def in_range(x, y):
