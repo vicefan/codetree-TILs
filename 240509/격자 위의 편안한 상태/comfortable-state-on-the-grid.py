@@ -10,7 +10,7 @@ arr = [
 ]
 
 def in_range(x, y):
-    return 0 <= x < n and 0 <= y < m
+    return 0 <= x < n and 0 <= y < n
 
 for _ in range(m):
     x, y = map(int, input().split())
