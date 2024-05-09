@@ -16,10 +16,10 @@ if 1 <= k <= n:
     x, y = 0, k_ - 1
 elif n + 1 <= k <= 2*n:
     dir_num = 2
-    x, y = k_ - 1, 2
+    x, y = k_ - 1, n - 1
 elif 2*n + 1 <= k <= 3*n:
     dir_num = 3
-    x, y = 2, n - k_
+    x, y = n - 1, n - k_
 else:
     dir_num = 0
     x, y = 0, n - k_
@@ -27,6 +27,7 @@ else:
 def in_range(x, y):
     return 0 <= x < n and 0 <= y < n
 
+# R, D, L, U
 cnt = 0
 while in_range(x, y):
     if arr[x][y] == "/":
