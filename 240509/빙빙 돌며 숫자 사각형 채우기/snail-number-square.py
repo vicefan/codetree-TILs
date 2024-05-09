@@ -9,7 +9,7 @@ arr = [
     ]
 
 def in_range(x, y):
-    return 0 <= x < n and 0 <= y < n
+    return 0 <= x < n and 0 <= y < m
 
 x, y, dir_num = 0, 0, 0
 arr[x][y] = 1
