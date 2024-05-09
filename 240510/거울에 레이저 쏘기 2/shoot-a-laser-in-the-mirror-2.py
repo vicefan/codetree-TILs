@@ -13,10 +13,10 @@ k = int(input())
 k_ = k % n
 if 1 <= k <= n:
     dir_num = 1
-    x, y = 0, k_ - 1
+    x, y = 0, 2 - k_
 elif n + 1 <= k <= 2*n:
     dir_num = 2
-    x, y = k_ - 1, n - 1
+    x, y = 2 - k_, n - 1
 elif 2*n + 1 <= k <= 3*n:
     dir_num = 3
     x, y = n - 1, n - k_
@@ -26,6 +26,8 @@ else:
 
 def in_range(x, y):
     return 0 <= x < n and 0 <= y < n
+
+print(x, y, dir_num)
 
 # R, D, L, U
 cnt = 0
