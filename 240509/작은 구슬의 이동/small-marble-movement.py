@@ -12,7 +12,7 @@ r, c, d = tuple(input().split())
 r, c, dir_str = int(r), int(c), dr[d]
 
 def in_range(x, y):
-    return 1 <= x < n and 1 <= y < n
+    return 0 < x < n + 1 and 0 < y < n + 1
 
 for _ in range(t):
     nr, nc = r + dxs[dir_str], c + dys[dir_str]
