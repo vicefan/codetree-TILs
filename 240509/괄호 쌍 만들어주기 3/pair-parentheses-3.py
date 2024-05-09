@@ -1,9 +1,9 @@
-arr = input()
-n = len(arr)
+cnt = 0
 result = 0
-for i in range(n):
-    for j in range(i + 1, n):
-        if arr[i] + arr[j] == "()":
-            result += 1
+for elem in input():
+    if elem == "(":
+        cnt += 1
+    else:
+        result += cnt
 
 print(result)
