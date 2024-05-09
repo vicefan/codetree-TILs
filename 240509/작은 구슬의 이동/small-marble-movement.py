@@ -1,10 +1,5 @@
-dxs = [0, 1,  0, -1]
-dys = [-1, 0, 1,  0]
-
-n, t = map(int, input().split())
-r, c, d = tuple(input().split())
-r, c = int(r), int(c)
-
+dxs, dys = ([1, 0, 0, -1], 
+            [0, 1, -1, 0])
 dr = {
     "D": 0,
     "R": 1,
@@ -12,20 +7,18 @@ dr = {
     "U": 3
 }
 
-arr = [
-    [0 for _ in range(n)]
-    for _ in range(n)
-    ]
+n, t = map(int, input().split())
+r, c, d = tuple(input().split())
+r, c, dir_str = int(r), int(c), dr[d]
 
 def in_range(x, y):
     return 1 <= x < n and 1 <= y < n
 
 for _ in range(t):
-    dir_str = dr[d]
     nr, nc = r + dxs[dir_str], c + dys[dir_str]
-    if not in_range(nr, nc):
-        dir_str = 3 - dir_str
-    else:
+    if in_range(nr, nc):
         r, c = nr, nc
+    else:
+        dir_str = 3 - dir_str
 
 print(r, c)
