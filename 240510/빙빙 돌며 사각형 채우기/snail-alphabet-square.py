@@ -23,7 +23,7 @@ for cnt in range(2, n * m + 1):
         dir_num = (dir_num + 1) % 4
         nx, ny = x + dxs[dir_num], y + dys[dir_num]
 
-    arr[nx][ny] = alp[cnt - 1 % len(alp)]
+    arr[nx][ny] = alp[(cnt - 1) % len(alp)]
     x, y = nx, ny
 
 for elem in arr:
