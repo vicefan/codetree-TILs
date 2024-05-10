@@ -20,4 +20,4 @@ for _ in range(2):
                 color = color_diff
     
 
-print(route.count((4, 4)))
+print(route.count((r - 1, c - 1)))
