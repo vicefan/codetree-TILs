@@ -1,7 +1,7 @@
 r, c = map(int, input().split())
 arr = [
     input().split()
-    for _ in range(c)
+    for _ in range(r)
 ]
 route = []
 
@@ -9,8 +9,8 @@ x, y, color = 0, 0, arr[0][0]
 
 for _ in range(2):
     color = arr[0][0]
-    for i in range(1, c):
-        for j in range(1, r):
+    for i in range(1, r):
+        for j in range(1, c):
             color_diff = arr[i][j]
             if color == color_diff:
                 pass
