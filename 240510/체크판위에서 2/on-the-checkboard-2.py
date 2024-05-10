@@ -9,8 +9,8 @@ x, y, color = 0, 0, arr[0][0]
 
 for _ in range(2):
     color = arr[0][0]
-    for i in range(1, r):
-        for j in range(1, c):
+    for i in range(1, c):
+        for j in range(1, r):
             color_diff = arr[i][j]
             if color == color_diff:
                 pass
